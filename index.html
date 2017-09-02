@@ -12,30 +12,10 @@
 <a-scene>
   <a-assets>
 
-    <a-asset-item id="globe1" src="earth-globe/source/globe/earth.gltf"></a-asset-item>
     <img id="world" src="world_map.jpg">
 
   </a-assets>
 
-  <!--why is the rotation animation changing the position? It's because the  model isn't centered.
-  this is something you'd want to fix before exporting from Blender by resetting geometry to origin,
-  i.e. clearing the pivot point. How do I do this?-->
-
-  <!--If I can't fix the rotation, then just put the markers in the gltf entity and have the user walk around the globe-->
-
-
-  <!--maybe instead of a globe, I just have a gigantic map on the floor. -->
-
-  <!--check a map to see if my cities are right-->
-
-
-  <!--<a-entity gltf-model="#globe1"  position="0 8 -5" rotation='0 0 0'>-->
-  <!--<a-animation attribute="rotation"-->
-  <!--dur="10000"-->
-  <!--fill="forwards"-->
-  <!--to="0 360 0"-->
-  <!--repeat="indefinite"></a-animation>-->
-  <!--</a-entity>-->
 
 
   <a-entity position="0 2 3">
