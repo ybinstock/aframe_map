@@ -115,11 +115,55 @@ AFRAME.registerComponent('vancouver', {
   }
 });
 
-AFRAME.registerComponent('washington', {
+AFRAME.registerComponent('bangkok', {
   init: function() {
-    var sphere = document.getElementById('Washington');
+    var sphere = document.getElementById('Bangkok');
     sphere.addEventListener('click', function(evt) {
-      document.getElementById('sky').setAttribute("src", "panos/Washington.jpg");
+      document.getElementById('sky').setAttribute("src", "panos/bangkok.jpg");
     });
   }
 });
+
+AFRAME.registerComponent('capetown', {
+  init: function() {
+    var sphere = document.getElementById('CapeTown');
+    sphere.addEventListener('click', function(evt) {
+      document.getElementById('sky').setAttribute("src", "panos/cape_town.jpg");
+    });
+  }
+});
+
+AFRAME.registerComponent('istanbul', {
+  init: function() {
+    var sphere = document.getElementById('Istanbul');
+    sphere.addEventListener('click', function(evt) {
+      document.getElementById('sky').setAttribute("src", "panos/istanbul.jpg");
+    });
+  }
+});
+
+AFRAME.registerComponent('venice', {
+  init: function() {
+    var sphere = document.getElementById('Venice');
+    sphere.addEventListener('click', function(evt) {
+      console.log('hi');
+      document.getElementById('sky').setAttribute("src", "panos/venice.jpg");
+    });
+  }
+});
+
+AFRAME.registerComponent('vienna', {
+  init: function() {
+    var sphere = document.getElementById('Vienna');
+    sphere.addEventListener('click', function(evt) {
+      document.getElementById('sky').setAttribute("src", "panos/vienna.jpg");
+    });
+  }
+});
+
+function hideInstructions() {
+  document.querySelector('.instructions').setAttribute('visible', 'false');
+}
+
+setTimeout(hideInstructions, 10000);
+
